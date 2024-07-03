@@ -1,0 +1,90 @@
+{
+    "currency": "USD",
+    "watermark_text": "Eternal Elegance Emporium",
+    "selected_marketplaces": ["eBay", "Etsy", "Facebook Marketplace", "Instagram", "Mercari", "Poshmark", "OfferUp", "Pinterest", "Twitter"],
+    "ebay_api": {
+        "sandbox": {
+            "client_id": "YOUR_SANDBOX_CLIENT_ID",
+            "client_secret": "YOUR_SANDBOX_CLIENT_SECRET",
+            "auth_token": "YOUR_SANDBOX_AUTH_TOKEN",
+            "refresh_token": "YOUR_SANDBOX_REFRESH_TOKEN",
+            "endpoints": {
+                "inventory_offer": "https://api.sandbox.ebay.com/sell/inventory/v1/offer",
+                "oauth_token": "https://api.sandbox.ebay.com/identity/v1/oauth2/token"
+            },
+            "scopes": ["https://api.ebay.com/oauth/api_scope/sell.inventory"]
+        },
+        "production": {
+            "client_id": "YOUR_PRODUCTION_CLIENT_ID",
+            "client_secret": "YOUR_PRODUCTION_CLIENT_SECRET",
+            "auth_token": "YOUR_PRODUCTION_AUTH_TOKEN",
+            "refresh_token": "YOUR_PRODUCTION_REFRESH_TOKEN",
+            "endpoints": {
+                "inventory_offer": "https://api.ebay.com/sell/inventory/v1/offer",
+                "oauth_token": "https://api.ebay.com/identity/v1/oauth2/token"
+            },
+            "scopes": ["https://api.ebay.com/oauth/api_scope/sell.inventory"]
+        },
+        "fulfillment_policy_id": "YOUR_EBAY_FULFILLMENT_POLICY_ID",
+        "payment_policy_id": "YOUR_EBAY_PAYMENT_POLICY_ID",
+        "return_policy_id": "YOUR_EBAY_RETURN_POLICY_ID"
+    },
+    "etsy_api": {
+        "api_key": "YOUR_ETSY_API_KEY",
+        "access_token": "YOUR_ETSY_ACCESS_TOKEN",
+        "shop_id": "YOUR_ETSY_SHOP_ID",
+        "shop_section_id": "YOUR_ETSY_SHOP_SECTION_ID",
+        "shipping_template_id": "YOUR_ETSY_SHIPPING_TEMPLATE_ID",
+        "taxonomy_id": "YOUR_ETSY_TAXONOMY_ID",
+        "endpoints": {
+            "create_listing": "https://api.etsy.com/v3/application/shops/{shop_id}/listings"
+        }
+    },
+    "facebook_marketplace_api": {
+        "access_token": "YOUR_FACEBOOK_ACCESS_TOKEN",
+        "catalog_id": "YOUR_FACEBOOK_CATALOG_ID",
+        "endpoints": {
+            "add_product": "https://graph.facebook.com/v11.0/{catalog_id}/products"
+        }
+    },
+    "instagram_api": {
+        "access_token": "YOUR_INSTAGRAM_ACCESS_TOKEN",
+        "catalog_id": "YOUR_INSTAGRAM_CATALOG_ID",
+        "endpoints": {
+            "add_product": "https://graph.facebook.com/v11.0/{catalog_id}/products"
+        }
+    },
+    "mercari_api": {
+        "access_token": "YOUR_MERCARI_ACCESS_TOKEN",
+        "category_id": "YOUR_MERCARI_CATEGORY_ID",
+        "endpoints": {
+            "create_listing": "https://api.mercari.com/v3/listings"
+        }
+    },
+    "poshmark_api": {
+        "access_token": "YOUR_POSHMARK_ACCESS_TOKEN",
+        "category": "YOUR_POSHMARK_CATEGORY",
+        "endpoints": {
+            "create_listing": "https://api.poshmark.com/v3/listings"
+        }
+    },
+    "offerup_api": {
+        "access_token": "YOUR_OFFERUP_ACCESS_TOKEN",
+        "category_id": "YOUR_OFFERUP_CATEGORY_ID",
+        "endpoints": {
+            "create_listing": "https://api.offerup.com/v3/listings"
+        }
+    },
+    "pinterest_api": {
+        "access_token": "YOUR_PINTEREST_ACCESS_TOKEN",
+        "endpoints": {
+            "add_product": "https://api.pinterest.com/v3/catalogs/products"
+        }
+    },
+    "twitter_api": {
+        "access_token": "YOUR_TWITTER_ACCESS_TOKEN",
+        "endpoints": {
+            "create_tweet": "https://api.twitter.com/2/tweets"
+        }
+    }
+}
